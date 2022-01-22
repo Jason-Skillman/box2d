@@ -29,4 +29,10 @@ project "box2d"
 
 	filter "configurations:Release"
 		runtime "Release"
+		symbols "on"
+		optimize "on"
+
+	filter "configurations:Distribution"
+		runtime "Release"
+		symbols "off"
 		optimize "on"
